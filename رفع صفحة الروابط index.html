@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>روابط فيصل</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .link-box {
+      background-color: #fff;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      direction: rtl;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    .share-all {
+      margin-top: 25px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👋 أهلاً بك في صفحة روابط فيصل</h1>
+  <p>كل الروابط المفيدة والربحية في مكان واحد</p>
+
+  <div class="link-box">
+    📘 مدونة ميديوم
+    <button onclick="copyText('https://medium.com/@hikayatwaebra')">نسخ</button>
+  </div>
+  <div class="link-box">
+    📗 مدونة بلوجر
+    <button onclick="copyText('https://hikayat-wa-ibra.blogspot.com')">نسخ</button>
+  </div>
+  <div class="link-box">
+    📸 انستغرام
+    <button onclick="copyText('https://www.instagram.com/bayn.alsotor?igsh=cGxqenU0MGJ1a3Zz')">نسخ</button>
+  </div>
+  <div class="link-box">
+    📺 يوتيوب
+    <button onclick="copyText('https://www.youtube.com/@kanz_tech')">نسخ</button>
+  </div>
+  <div class="link-box">
+    📎 TimeBucks
+    <button onclick="copyText('https://www.timebucks.com/?refID=your_ref_id')">نسخ</button>
+  </div>
+  <div class="link-box">
+    💸 IPWeb
+    <button onclick="copyText('https://ipweb.ru/?ref=your_ref_id')">نسخ</button>
+  </div>
+  <div class="link-box">
+    🌀 Yasens
+    <button onclick="copyText('https://yasens.com/?r=your_ref_id')">نسخ</button>
+  </div>
+  <div class="link-box">
+    🤖 بوت Money Bux
+    <button onclick="copyText('https://t.me/rnd0cd9280aa2bot/app?startapp=r_7169341573')">نسخ</button>
+  </div>
+  <div class="link-box">
+    📲 قناة تيليغرام
+    <button onclick="copyText('https://t.me/Faissalfeg')">نسخ</button>
+  </div>
+  <div class="link-box">
+    🌐 صفحة الروابط الموحدة
+    <button onclick="copyText('https://minily.fr/GPCy5f2peK')">نسخ</button>
+  </div>
+
+  <div class="share-all">
+    <button onclick="shareAll()">📤 مشاركة جميع الروابط</button>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("تم النسخ ✅");
+      });
+    }
+
+    function shareAll() {
+      const links = `
+📘 مدونة ميديوم
+https://medium.com/@hikayatwaebra
+📗 مدونة بلوجر
+https://hikayat-wa-ibra.blogspot.com
+📸 انستغرام
+https://www.instagram.com/bayn.alsotor?igsh=cGxqenU0MGJ1a3Zz
+📺 يوتيوب
+https://www.youtube.com/@kanz_tech
+📎 TimeBucks
+https://www.timebucks.com/?refID=your_ref_id
+💸 IPWeb
+https://ipweb.ru/?ref=your_ref_id
+🌀 Yasens
+https://yasens.com/?r=your_ref_id
+🤖 بوت Money Bux
+https://t.me/rnd0cd9280aa2bot/app?startapp=r_7169341573
+📲 قناة تيليغرام
+https://t.me/Faissalfeg
+🌐 صفحة الروابط الموحدة
+https://minily.fr/GPCy5f2peK
+      `;
+      navigator.clipboard.writeText(links).then(() => {
+        alert("جميع الروابط تم نسخها ✅");
+      });
+    }
+  </script>
+
+</body>
+</html>
